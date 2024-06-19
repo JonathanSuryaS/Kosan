@@ -1,0 +1,423 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'itim';
+}
+
+nav{
+    display: flex;
+    width: 100%;
+    height: 85px;
+    background: #7747FD;
+    position: relative;
+    justify-content: space-between;
+    text-align: center;
+    padding: 15px 30px;
+    box-shadow: 0px 4px 4px -2px rgba(0, 0, 0, 0.3);
+}
+
+nav .icon{
+    font-size: 35px;
+    font-weight: 100;
+    color: white;
+    padding-top: 8px;
+    margin-left: 5px;
+}
+
+nav ol{
+    display: flex;
+    list-style: none;
+    margin: auto 0;
+}
+
+nav ol li{
+    margin: 0 2px;
+}
+
+nav ol li a{
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    letter-spacing: 1px;
+    padding: 7px 32px;
+}
+
+nav ol li:hover a{
+    background: #120059;
+    color: white;
+    border-radius: 20px;
+}
+
+.active{
+    background: #120059;
+    color: white;
+    border-radius: 20px;
+}
+
+.active:hover{
+    background-color: black;
+}
+
+nav .search_box{
+    display: flex;
+    margin: auto 0;
+    height: 45px;
+    line-height: 35px;
+    box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.35);
+}
+
+nav .search_box input{
+    border: none;
+    outline: none;
+    background: white;
+    height: 100%;
+    padding: 0 10px;
+    font-size: 14px;
+    width: 400px;
+}
+
+nav .search_box span{
+    color: black;
+    font-size: 18px;
+    background: white;
+    height: 100%;
+    padding: 12px;
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
+}
+
+nav .search_box span:hover{
+    color: white;
+}
+
+nav .search_box span::after{
+    height: 100%;
+    width: 0%;
+    content: '';
+    background: #120059;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    transition: 0.3s;
+}
+
+nav .search_box span:hover::after{
+    width: 100%;
+}
+
+body{
+    background-color: #FFF8ED;
+}
+
+.content{
+    margin:50px 20px 50px 20px;
+}
+
+.picture{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+}
+
+.left img{
+    height: 500px;
+}
+
+.right{
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+}
+
+.right img{
+    width: 100%;
+    height: 250px;
+}
+
+.right-right{
+    margin-left: 20px;
+}
+
+.under-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-left: 60px;
+}
+
+.Address{
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0px;
+}
+
+.Address pre{
+    font-size: 20px;
+}
+
+.under-left img{
+    width: 40px;
+    height: 40px;
+}
+
+.under-left h1{
+    font-size: 80px;
+}
+
+.desc{
+    display: flex;
+    flex-direction: row;
+    width: 600px;
+    text-align: center;
+    align-items: center;
+}
+
+.desc p{
+    border: 1px solid gray;
+    width: fit-content;
+    padding: 10px;
+    font-size: 15px;
+    margin-left: 20px;
+    background-color: #FFF9C0
+}
+
+.desc-content{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.desc-content-left{
+    display: flex;
+    flex-direction: column;
+}
+
+.desc2{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    width: 600px;
+    text-align: center;
+    align-items: center;
+}
+
+.desc2 p{
+    border: 1px solid gray;
+    width: fit-content;
+    padding: 10px;
+    margin-left: 20px;
+    font-size: 15px;
+    background-color: #FFF9C0
+}
+
+.favorite{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.room{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.room img{
+    height: 20px;
+    width: 20px;
+}
+
+.room p{
+    color: red;
+    font-weight: bold;
+}
+
+.favorite-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.favorite-btn img{
+    height: 15px;
+    width: 15px;
+}
+
+.favorite button{
+    border: 1px solid gray;
+    background: white;
+}
+
+.under-desc{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.under-desc-left{
+    display: flex;
+    flex-direction: column;
+}
+
+.favorite button:hover{
+    background-color: #A6D1E6;
+    transition: .5s;
+}
+
+.desc-content-middle{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    margin-right: 200px;
+}
+
+.desc-content-middle .option{
+    width: 200px;
+}
+
+.type pre{
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.option{
+    display: flex;
+    flex-direction: column;
+}
+
+.option select{
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+select,
+select option {
+  color: #000000;
+}
+
+select:invalid,
+select option[value=""] {
+  color: #999999;
+}
+
+label {
+  display: block;
+  margin: 16px 0;
+}
+
+[hidden] {
+  display: none;
+}
+
+.desc-content-right{
+    margin-top: 20px;
+    margin-left: 3px;
+}
+
+.desc-content-right button{
+    background-color: #7747FD;
+    color: white;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 20px;
+    width: 250px;
+}
+
+.desc-content-right .related{
+    margin-left: 50px;
+}
+
+.card {
+    margin-top: 125px;
+    margin-right: 50px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: 500px;
+    text-align: center;
+    height: 250px;
+}
+
+.price {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.currency {
+    font-weight: bold;
+}
+
+.amount {
+    font-weight: bold;
+}
+
+.dates {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.date-input {
+    position: relative;
+    width: 45%;
+}
+
+.date-input input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.date-input img {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+}
+
+.book-btn {
+    background: linear-gradient(to right, #7727F8, #2C0A62);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.book-btn:hover {
+    opacity: 0.9;
+}
+
+.price-details {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    font-size: 0.9em;
+}
+
+.final-price strong {
+    font-weight: bold;
+}

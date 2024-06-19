@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KosKita - Payment Confirmation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="PaymentPage.css">
+</head>
+<body>
+
+    <nav>
+        <div class="icon">Kosan</div>
+        <div class="search_box">
+            <span class="fa-solid fa-magnifying-glass"></span>  
+            <input type="search" placeholder="Enter location / address.....">
+            <span class="fa-solid fa-filter"></span>
+        </div>
+        <ol>
+            <li><a href="/FAQPage/faq.html">FAQ</a></li>
+            <li><a href="/FavoritesPage/FavoritesPage.html">Favorites</a></li>
+            <li><a href="/AboutUsPage/AboutUsPage.html">About Us</a></li>
+            <li><a href="/HomePage/HomePage.html">Home</a></li>
+        </ol>
+    </nav>
+
+    <div class="container">
+        <main>
+            <section class="booking-details">
+                <div class="tanggal">
+                    <h3>Penginapan anda</h3>
+                    <p class="dates">Tanggal</p>
+                    <p>28 Agustus - 28 November 2024</p>
+                </div>
+
+                <h3>Payment Option</h3>
+                <div class="payment-option">
+                    <select required>
+                        <option value="" selected disabled>Payment Option</option>
+                        <option>Debit</option>
+                        <option>Credit</option>
+                        <option>E-Wallet</option>
+                    </select>
+                </div>
+
+                <h3>Alamat penagihan</h3>
+                <form>
+                    <input type="text" id="alamat" name="alamat" placeholder="Alamat jalan">
+                    <input type="text" id="kota" name="kota" placeholder="Kota">
+                    <input type="text" id="kode-pos" name="kode-pos" placeholder="Kode pos">
+                    <input type="text" id="kecamatan" name="kecamatan" placeholder="Kecamatan / Wilayah">
+                </form>
+
+                <div class="basic-rules">
+                    <h3>Aturan dasar</h3>
+                    <p>Kami meminta setiap tamu untuk mengingat beberapa hal sederhana mengenai apa saja yang perlu dilakukan untuk menjadi tamu yang luar biasa.</p>
+                    <ul>
+                        <li>Patuhi peraturan rumah</li>
+                        <li>Perlakukan rumah milik Tuan Rumah Anda seperti rumah Anda sendiri</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="payment-summary">
+                <div class="property-details">
+                    <div class="left-img">
+                        <img src="/Image/home-kamar1.jpg" srcset="">
+                    </div>
+                    <div class="right-text">
+                        <h3>Agante Studento BSF</h3>
+                        <p>A3, RT1/RW11, Jl. Sandang, RT.1/RW.11, Palmerah, Kec. Palmerah, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11480, Indonesia</p>
+                        <p>⭐ 8.9 (41 ulasan) &nbsp;&nbsp;&nbsp;🏠 Host teladan</p>
+                    </div>
+                </div>
+                <div class="price-details">
+                    <h3>Rincian Harga</h3>
+                    <p>Rp 3.000.000 x 3 bulan <span>Rp 9.000.000</span></p>
+                    <p>Biaya Kebersihan <span>Rp 800.000</span></p>
+                    <p>Biaya Kosan <span>Rp 200.000</span></p>
+                    <p class="total">Total (IDR) <span>Rp 10.000.000</span></p>
+                </div>
+                <a href="/PaymentConfirmationPage/PaymentConf.html">
+                    <button class="confirm-btn">Confirm Payment</button>
+                </a>
+                <p class="cancellation-policy">
+                    Pembatalan gratis selama 48 jam Jika dibatalkan sebelum 21 Agustus, Anda akan mendapatkan pengembalian uang sebagian. <a href="#">Pelajari selengkapnya</a>
+                </p>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

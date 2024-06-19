@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'itim';
+}
+
+body{
+    background: url(/Image/landingpage.jpg) no-repeat;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'itim';
+}
+
+nav{
+    display: flex;
+    width: 100%;
+    height: 85px;
+    background: #7747FD;
+    position: relative;
+    justify-content: space-between;
+    text-align: center;
+    padding: 15px 30px;
+    box-shadow: 0px 4px 4px -2px rgba(0, 0, 0, 0.3);
+}
+
+nav .icon{
+    font-size: 35px;
+    font-weight: 100;
+    color: white;
+    padding-top: 8px;
+    margin-left: 5px;
+}
+
+nav ol{
+    display: flex;
+    list-style: none;
+    margin: auto 0;
+}
+
+nav ol li{
+    margin: 0 2px;
+}
+
+nav ol li a{
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    letter-spacing: 1px;
+    padding: 7px 32px;
+}
+
+nav ol li:hover a{
+    background: #120059;
+    color: white;
+    border-radius: 20px;
+}
+
+.active{
+    background: #120059;
+    color: white;
+    border-radius: 20px;
+}
+
+.active:hover{
+    background-color: black;
+}
+
+nav .search_box{
+    display: flex;
+    margin: auto 0;
+    height: 45px;
+    line-height: 35px;
+    box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.35);
+}
+
+nav .search_box input{
+    border: none;
+    outline: none;
+    background: white;
+    height: 100%;
+    padding: 0 10px;
+    font-size: 14px;
+    width: 400px;
+}
+
+nav .search_box span{
+    color: black;
+    font-size: 18px;
+    background: white;
+    height: 100%;
+    padding: 12px;
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
+}
+
+nav .search_box span:hover{
+    color: white;
+}
+
+nav .search_box span::after{
+    height: 100%;
+    width: 0%;
+    content: '';
+    background: #120059;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    transition: 0.3s;
+}
+
+nav .search_box span:hover::after{
+    width: 100%;
+}
+
+.landing{
+    position: absolute;
+    bottom: 260px;
+    left: 35px;
+}
+
+.content{
+    color: white;
+    font-size: 25px;
+    word-spacing: 6pt;
+}
+
+.content1{
+    color: white;
+    font-size: 25px;
+    word-spacing: 3pt;
+}
+
+.home{
+    position: absolute;
+    bottom: 210px;
+    left: 35px;
+}
+
+.button1{
+    background: white;
+    border: 2px solid white;
+    border-radius: 50px;
+    padding: 4px 8px;
+}
+
+.button1 a{
+    text-decoration: none;
+}

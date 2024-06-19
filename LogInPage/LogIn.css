@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'itim';
+}
+
+body{
+    display: flex;
+    min-height: 100vh;
+    background-color: black;
+}
+
+.left-side{
+    justify-content: left;
+    display: flex;
+    background-color: #120059;
+    width: 50%;
+    flex-direction: column;
+    border: 1px solid black;
+    text-align: center;
+    padding: 30px;
+}
+
+.left-side h1{
+    color: white;
+    font-size: 60px;
+}
+
+.left-side .left-img{
+    align-items: center;
+}
+
+.left-side img{
+    margin-top: 65px;
+    width: 650px;
+    height: 600px;
+}
+
+.left-side .bottom-left-text{
+    margin-top: 65px;
+    font-size: 25px;
+}
+
+.left-side .bottom-left-text h2{
+    color: white;
+}
+
+.left-side .bottom-left-text p{
+    color: white;
+}
+
+.right-side{
+    justify-content: right;
+    display: flex;
+    background-color: #7747FD;
+    width: 50%;
+    align-items: left;
+    flex-direction: column;
+    border: 1px solid black;
+    text-align: left;
+    padding: 30px;
+}
+
+.right-side h1{
+    color: white;
+    font-size: 60px;
+}
+
+.right-side p{
+    margin-top: 30px;
+    font-size: 40px;
+    color: white;
+}
+
+.right-side input {
+    display: block;              
+    margin-top: 10px;            
+    padding: 10px 15px;          
+    width: 700px;     
+    background-color: #450288;                         
+    color: white;              
+    border: 2px solid #000000;   
+    border-radius: 15px;        
+    font-size: 16px;             
+    box-sizing: border-box;  
+    height: 50px;
+}   
+
+.right-side input::placeholder {
+    color: white;
+}
+
+.right-side .login-btn-link{
+    align-self: center;
+}
+
+.right-side .login-btn {
+    align-self: center;
+    margin-top: 65px;
+    width: 500px;
+    height: 60px;
+    background-color: #ffffff;
+    color: #5614C0;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 25px;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+background-color: #8C52FF;
+color: #ffffff;
+}
+
+.or-continue {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.or-text {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.register-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+.register-link span {
+    margin-right: 5px;
+}
+
+.register-link a {
+    color: #00FF38;
+    text-decoration: none;
+    font-weight: 500;
+}
