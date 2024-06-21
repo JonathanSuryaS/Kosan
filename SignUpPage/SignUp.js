@@ -9,6 +9,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
         const email = document.getElementById('email').value;
         const password = document.getElementById('password').value
         const confirmPassword = document.getElementById('confirm-pass').value;
+        
+        if (!username || !email || !password || !confirmPassword) {
+            registerMessage.textContent = 'Please fill the required information!';
+            return;
+        } 
 
         // Validasi password
         if (password !== confirmPassword) {
