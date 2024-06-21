@@ -13,7 +13,7 @@
 <body>
     
     <div class="left-side">
-        <h1>Kosan</h1>
+        <h1>KosKita</h1>
         <div class="left-img">
             <img src="/Image/img_signup.jpg" alt="">
         </div>
@@ -24,18 +24,23 @@
     </div>
 
     <div class="right-side">
-        <h1>Welcome to Kosan</h1>
-        <p>Name</p>
-        <input type="text" id="name" name="name" placeholder="Ponyo">
-        <p>Email Adress</p>
-        <input type="text" id="email" name="email" placeholder="ponyo@binus.ac.id">
-        <p>Password</p>
-        <input type="text" id="password" name="password" placeholder="**************">
-        <p>Confirm Password</p>
-        <input type="text" id="confirm-pass" name="confirm-pass" placeholder="**************">
-        <a href="/HomePage/HomePage.html" class="signup-btn-link">
-            <button class="signup-btn">Sign up</button>
-        </a>
+        <h1>Welcome to KosKita</h1>
+        <div class="register-container">
+            <form id="registerForm">
+                <p>Name</p>
+                <input type="text" id="name" name="name" placeholder="Ponyo">
+                <p>Email Adress</p>
+                <input type="text" id="email" name="email" placeholder="ponyo@binus.ac.id">
+                <p>Password</p>
+                <input type="password" id="password" name="password" placeholder="Password">
+                <p>Confirm Password</p>
+                <input type="password" id="confirm-pass" name="confirm-pass" placeholder="Confirm Password">
+                <a href="/HomePage/HomePage.html" class="signup-btn-link">
+                    <button type="submit" class="signup-btn">Sign up</button>
+                </a>
+            </form>
+            <p id="registerMessage"></p>
+        </div>
         <div class="or-continue">
             <span class="or-text">Or continue with</span>
             <div class="social-icons">
@@ -50,4 +55,6 @@
             <a href="/LogInPage/LogIn.html">Login Here</a>
         </div>
     </div>
+    <script src="SignUp.js"></script>
 </body>
+</html>

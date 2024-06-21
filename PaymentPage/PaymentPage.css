@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'itim';
 }
 
 nav{
@@ -264,7 +265,6 @@ form input, form select {
 }
 
 .property-details .right-text p:nth-child(3)::after {
-    content: '🏠 Host teladan';
     margin-left: 10px;
 }
 

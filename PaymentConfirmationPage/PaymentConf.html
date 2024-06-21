@@ -13,7 +13,7 @@
 <body>
     
     <nav>
-        <div class="icon">Kosan</div>
+        <div class="icon">KosKita</div>
         <div class="search_box">
             <span class="fa-solid fa-magnifying-glass"></span>  
             <input type="search" placeholder="Enter location / address.....">
@@ -35,7 +35,8 @@
         <p>Your payment has been successfully done.</p>
         <div class="payment-details">
             <div>
-                <span class="label">Amount:</span> <strong>IDR 9,000,000</strong>
+                <!-- <span class="label">Amount:</span> <strong>IDR 9,000,000</strong> -->
+                <span class="label">Amount:</span><span id="totalPrice">10,000,000</span>
             </div>
             <div>
                 <span class="label">Payment Status:</span> Success
@@ -50,7 +51,7 @@
                 <span class="label">Payment Method:</span> Bank Transfer
             </div>
             <div>
-                <span class="label">Date:</span> 23/05/2024
+                <span class="label">Date:</span><span id="paymentDate"></span>
             </div>
         </div>
     </div>
@@ -65,6 +66,8 @@
         <p class="a-receipt">A Receipt for this transaction has been sent via email for your records</p>
         <a href="">Click here to print a receipt with additional details</a>
     </div>
+
+    <script src="PaymentConf.js"></script>
 
 </body>
 </html>

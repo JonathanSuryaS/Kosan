@@ -6,11 +6,14 @@
     <title>KosKita - Payment Confirmation</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="PaymentPage.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+    </style>
 </head>
 <body>
 
     <nav>
-        <div class="icon">Kosan</div>
+        <div class="icon">KosKita</div>
         <div class="search_box">
             <span class="fa-solid fa-magnifying-glass"></span>  
             <input type="search" placeholder="Enter location / address.....">
@@ -29,8 +32,7 @@
             <section class="booking-details">
                 <div class="tanggal">
                     <h3>Penginapan anda</h3>
-                    <p class="dates">Tanggal</p>
-                    <p>28 Agustus - 28 November 2024</p>
+                    <p class="dates" id="storedDates">Tanggal</p>
                 </div>
 
                 <h3>Payment Option</h3>
@@ -68,15 +70,16 @@
                     <div class="right-text">
                         <h3>Agante Studento BSF</h3>
                         <p>A3, RT1/RW11, Jl. Sandang, RT.1/RW.11, Palmerah, Kec. Palmerah, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11480, Indonesia</p>
-                        <p>⭐ 8.9 (41 ulasan) &nbsp;&nbsp;&nbsp;🏠 Host teladan</p>
+                        <p>⭐ 8.9 (41 ulasan) 🏠 Host teladan</p>
                     </div>
                 </div>
                 <div class="price-details">
-                    <h3>Rincian Harga</h3>
-                    <p>Rp 3.000.000 x 3 bulan <span>Rp 9.000.000</span></p>
+                    <h3>Harga</h3>
+                    <!-- <p>Rp 3.000.000 x 3 bulan <span>Rp 9.000.000</span></p>
                     <p>Biaya Kebersihan <span>Rp 800.000</span></p>
-                    <p>Biaya Kosan <span>Rp 200.000</span></p>
-                    <p class="total">Total (IDR) <span>Rp 10.000.000</span></p>
+                    <p>Biaya Kosan <span>Rp 200.000</span></p> -->
+                    <!-- <p class="total">Total (IDR) <span>Rp 10.000.000</span></p> -->
+                    <p class="total">Total (IDR) <span id="totalPrice">Rp 10.000.000</span></p>
                 </div>
                 <a href="/PaymentConfirmationPage/PaymentConf.html">
                     <button class="confirm-btn">Confirm Payment</button>
@@ -87,5 +90,6 @@
             </section>
         </main>
     </div>
+    <script src="PaymentPage.js"></script>
 </body>
 </html>

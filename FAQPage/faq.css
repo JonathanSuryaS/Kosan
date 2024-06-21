@@ -113,6 +113,10 @@ a{
     text-decoration: none;
 }
 
+body{
+    background-color: #FFF8ED;
+}
+
 .main{
     margin-top: 75px;
     width: 100%;
@@ -123,7 +127,7 @@ a{
   
 .menu{
     width: 20%;
-    background-color: white;
+    background-color: #FFF8ED;
 }
 
 .menu a{

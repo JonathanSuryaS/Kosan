@@ -13,7 +13,7 @@
 <body>
     
     <div class="left-side">
-        <h1>Kosan</h1>
+        <h1>KosKita</h1>
         <div class="left-img">
             <img src="/Image/img_login.jpg" alt="">
         </div>
@@ -25,13 +25,18 @@
 
     <div class="right-side">
         <h1>Welcome Back</h1>
-        <p>Email Adress</p>
-        <input type="text" id="email" name="email" placeholder="ponyo@binus.ac.id">
-        <p>Password</p>
-        <input type="text" id="password" name="password" placeholder="**************">
-        <a href="/HomePage/HomePage.html" class="login-btn-link">
-            <button class="login-btn">Log In</button>
-        </a>
+        <div class="login-container">
+            <form id="loginForm">
+                <p>Email Adress</p>
+                <input type="text" id="email" name="email" placeholder="ponyo@binus.ac.id">
+                <p>Password</p>
+                <input type="password" id="password" name="password" placeholder="Password">
+                <a href="/HomePage/HomePage.html" class="login-btn-link">
+                    <button class="login-btn">Log In</button>
+                </a>
+            </form>
+            <p id="loginMessage"></p>
+        </div>
         <!-- <button class="login-btn">Log In</button> -->
         <div class="or-continue">
             <span class="or-text">Or login with</span>
@@ -47,4 +52,6 @@
             <a href="/SignUpPage/SignUp.html">Register Here</a>
         </div>
     </div>
+    <script src="LogIn.js"></script>
 </body>
+</html>

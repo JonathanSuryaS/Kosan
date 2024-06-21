@@ -14,7 +14,7 @@
 <body>
     
     <nav>
-        <div class="icon">Kosan</div>
+        <div class="icon">KosKita</div>
         <div class="search_box">
             <span class="fa-solid fa-magnifying-glass"></span>  
             <input type="search" placeholder="Enter location / address.....">
@@ -47,11 +47,11 @@
 
         <div class="under-content">
             <div class="under-left">
-                <h1>Kosan 1</h1>
+                <h1>Agante Studento BSF</h1>
                 <div class="Address">
-                    <img src="/Image/geo-location-pin-vector-icon.webp" alt="">
-                    <pre>  Alamat ABCD, Jl. Sunib, RT.00/RW.01, Sunibian, Kec. 
-  SunibKece, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 
+                    <img src="/Image/geo-location-pin-vector-icon.png" alt="">
+                    <pre>  3, RT1/RW11, Jl. Sandang, RT.1/RW.11, Palmerah, Kec. 
+  Palmerah, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 
   11480, Indonesia</pre>
                 </div>
                 <div class="desc-content">
@@ -80,9 +80,9 @@
                                         </div>
                                     </button>
                                     <button>
-                                        <div class="favorite-btn">
+                                        <div class="chat-btn">
                                             <img src="/Image/1380370.png" alt="">
-                                            <p>Chat Owner</p>
+                                            <a href="/ChatPage/chat.html">Chat Owner</a>
                                         </div>
                                     </button>
                                 </div>
@@ -102,6 +102,9 @@
                                     <select required>
                                         <option value="" selected disabled>Please select </option>
                                         <option>Toilet</option>
+                                        <option>Kulkas</option>
+                                        <option>AC</option>
+                                        <option>Semua</option>
                                     </select>
                                 </div>
                             </div>
@@ -120,22 +123,22 @@
                 <div class="dates">
                     <div class="date-input">
                         Start:
-                        <input type="date" placeholder="End">
+                        <input type="date" id="startDate" placeholder="Start">
                     </div>
                     <div class="date-input">
                         End:
-                        <input type="date" placeholder="End">
+                        <input type="date" id="endDate" placeholder="End">
                     </div>
                 </div>
                 <a href="/PaymentPage/PaymentPage.html">
-                    <button class="book-btn">Book now</button>
+                    <button class="book-btn" id="bookBtn">Book now</button>
                 </a>
                 <div class="price-details">
-                    <span>Harga tanpa biaya lain</span> <span class="final-price">Rp <strong>9.000.000</strong></span>
+                    <span>Harga tanpa biaya lain</span> <span class="final-price">Rp <strong id="finalPrice">Date Not Selected</strong></span>
                 </div>
             </div>
         </div>
     </div>
-
+    <script src="Details.js"></script>
 </body>
 </html>
